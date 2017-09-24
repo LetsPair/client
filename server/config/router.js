@@ -10,7 +10,6 @@ const fetch = require('isomorphic-fetch')
 const fs = require('fs')
 const next = require('next')
 const path = require('path')
-const request = require('request-promise-native')
 const router = require('koa-router')()
 
 

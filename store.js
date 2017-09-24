@@ -4,7 +4,6 @@ import {
   createStore,
   applyMiddleware
 } from 'redux'
-import { composeWithDevTools } from 'redux-devtools-extension'
 import thunkMiddleware from 'redux-thunk'
 
 
@@ -33,5 +32,5 @@ export const actions = Object.assign(
 
 
 export const initStore = (initialState = initialState) => {
-  return createStore(reducer, initialState, composeWithDevTools(applyMiddleware(thunkMiddleware)))
+  return createStore(reducer, initialState, applyMiddleware(thunkMiddleware))
 }
